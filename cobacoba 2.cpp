@@ -38,15 +38,20 @@ void mainmenu(void)
 	int choice;
 	scanf("%d",&choice);
 	if(choice==1)
-	{
+	{	
+		system("cls");
 		administration();
+		
 	}
 	else if(choice==2)
-	{
+	{	
+		system("cls");
 		customer();
+		
 	}
 	else if(choice==3)
 	{
+		system("cls");
 		aboutus();
 	}
 	else if(choice==4)
@@ -77,17 +82,21 @@ void administration(void)
 	}
 	printf("\n\n");
 	switch(n)
-	{
-		case 1:addSongs();
+	{	
+		case 1: system("cls");
+			addSongs();
 		break;
 		
-		case 2:editSongs();
+		case 2: system("cls");
+			editSongs();
 		break;
 			
-		case 3:removeSongs();
+		case 3: system("cls");
+			removeSongs();
 		break;
 			
-		case 4:viewrecord();
+		case 4: system("cls");
+			viewrecord();
 		break;
 		
 		case 5:system("cls");
@@ -132,7 +141,7 @@ void administration(void)
 }
 void customer(void)
 {
-	printf("**************************************WELCOME TO THE ADMIN SECTION************************************************\n\n");
+	printf("**************************************WELCOME TO THE CUSTOMER SECTION************************************************\n\n");
 	printf("          1. View Songs\n\n          2. Add Songs\n\n          3. Purchasing\n\n          4. Back To Main Menu\n\n                           Enter Your Choice --->");
 	int n;
 	scanf("%d",&n);
@@ -175,7 +184,7 @@ void aboutus(void)
 
 void addSongs(void)
 {
-	
+	printf("Hai");
 }
 
 void editSongs(void)
