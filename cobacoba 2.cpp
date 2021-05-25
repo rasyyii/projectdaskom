@@ -76,6 +76,30 @@ void administration(void)
 		printf("\rIn progress : %d",wait/1000);
 	}
 	printf("\n\n");
+	switch(n)
+	{
+		case 1:addSongs();
+		break;
+		
+		case 2:editSongs();
+		break;
+			
+		case 3:removeSongs();
+		break;
+			
+		case 4:viewrecord();
+		break;
+		
+		case 5:system("cls");
+			mainmenu();
+		break;
+		
+		default: printf("Wrong Input !! PLease Re-enter The Correct Option");
+		if(getch())
+		administration();
+		break;
+	}
+	/*
 	if(n==1)
 	{
 		addSongs();
@@ -103,6 +127,7 @@ void administration(void)
 		if(getch())
 		administration();
 	}
+	*/
 	
 }
 void customer(void)
